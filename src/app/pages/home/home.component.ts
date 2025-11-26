@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CollageYogaComponent } from '../../components/collage-yoga/collage-yoga.component';
-import { ContactComponent } from '../../components/contact/contact.component';
 import { ExpertiseTagGroupComponent } from '../../components/expertise-tag-group/expertise-tag-group.component';
 import { HeroHomeComponent } from '../../components/hero-home/hero-home.component';
 import { IntroButtonComponent } from '../../components/intro-button/intro-button.component';
@@ -19,7 +18,6 @@ import { ArticleService } from '../../services/article.service';
     CollageYogaComponent,
     CommonModule,
     ExpertiseTagGroupComponent,
-    ContactComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

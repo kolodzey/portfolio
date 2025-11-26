@@ -1,33 +1,123 @@
 @use "../../../styles/tokens" as token;
+@use "../../../styles/semantic" as semantic;
 
-.intro {
-  font-size: 28px;
+.hero-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: semantic.$radius-l;
+  border: 1px solid semantic.$color-border;
+  background-color: semantic.$color-bg;
+  padding: token.$spacing-unit-large * 12 token.$spacing-unit-large * 10;
+  box-shadow: token.$elevation-xs;
 }
 
-img {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
+.hero-card__content {
+  position: relative;
+  z-index: 1;
 }
+
+/* Eyebrow text above the heading */
+.hero-eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: token.$gray-400;
+  margin-bottom: token.$spacing-unit-large * 2;
+}
+
+/* Override default h1 a bit for hero */
+.hero-title {
+  margin-bottom: token.$spacing-unit-large * 6;
+}
+
+/* Background glow container */
+.hero-card__glow {
+  position: absolute;
+  inset: -20%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Base blob style */
+.hero-card__blob {
+  position: absolute;
+  width: 32rem;
+  height: 32rem;
+  border-radius: 50%;
+  filter: blur(50px);
+  opacity: 0.8;
+}
+
+/* Left blob */
+.hero-card__blob--left {
+  top: -3rem;
+  left: -5rem;
+  background: radial-gradient(
+    circle at 30% 30%,
+    token.$violet-500,
+    token.$teal-500,
+    token.$ochre-500
+  );
+  animation: subtle-float 16s ease-in-out infinite;
+}
+
+/* Right blob */
+.hero-card__blob--right {
+  bottom: -4rem;
+  right: -3rem;
+  background: radial-gradient(
+    circle at 70% 40%,
+    token.$teal-500,
+    token.$violet-300,
+    token.$ochre-500
+  );
+
+  animation: subtle-float-reverse 24s ease-in-out infinite;
+}
+
+/* ========================================================================
+   Hero Animations
+   ======================================================================== */
+@keyframes subtle-float {
+  0% {
+    transform: translate3d(-40px, -20px, 0);
+  }
+  50% {
+    transform: translate3d(40px, 30px, 0);
+  }
+  100% {
+    transform: translate3d(-40px, -20px, 0);
+  }
+}
+
+@keyframes subtle-float-reverse {
+  0% {
+    transform: translate3d(30px, 20px, 0);
+  }
+  50% {
+    transform: translate3d(-30px, -25px, 0);
+  }
+  100% {
+    transform: translate3d(30px, 20px, 0);
+  }
+}
+
+/* ========================================================================
+   Hero Responsive
+   ======================================================================== */
 
 @media (max-width: 768px) {
-  .intro {
-    font-size: 23px;
+  .hero-card {
+    padding: token.$spacing-unit-large * 8 token.$spacing-unit-large * 5;
   }
-  img {
-    margin: 0 auto;
+
+  .hero-title {
+    font-size: 2rem;
   }
-  p,
-  h1 {
-    text-align: center;
-  }
-  .button {
-    display: block;
-    width: fit-content;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+
+  .hero-card__blob {
+    width: 14rem;
+    height: 14rem;
+    filter: blur(30px);
   }
 }

@@ -146,6 +146,20 @@ a {
   }
 }
 
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+  padding: token.$spacing-unit-large;
+  background: semantic.$color-bg;
+  transform: translateY(-100%);
+
+  &:focus {
+    transform: translateY(0);
+  }
+}
+
 // ========================================================================
 // Button Styles
 // ========================================================================
@@ -352,7 +366,7 @@ code {
   text-shadow: none;
 }
 
-button.application {
+.application {
   margin-top: token.$spacing-unit-large * 6;
 }
 

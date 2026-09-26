@@ -3,7 +3,7 @@
     <h2>Table of Contents</h2>
 
     <h3 *ngFor="let section of sections">
-      <a (click)="scrollTo(section.id)">{{ section.label }}</a>
+      <a [attr.href]="'#' + section.id">{{ section.label }}</a>
     </h3>
   </div>
 </section>

@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router, RouterModule } from '@angular/router';
-import { filter } from 'rxjs';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-menu',
@@ -9,7 +8,10 @@ import { filter } from 'rxjs';
     templateUrl: 'menu.component.html',
     styleUrl: 'menu.component.scss'
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
+  @ViewChild('menuToggle') menuToggle!: ElementRef<HTMLButtonElement>;
+  @ViewChild('navMenu') navMenu!: ElementRef<HTMLUListElement>;
+
   menuOpen = false;
 
   menuItems: { label: string; link: string }[] = [
@@ -19,16 +21,28 @@ export class MenuComponent implements OnInit {
     { label: 'About', link: '/about' },
   ];
 
-  constructor(private router: Router) {}
-
-  ngOnInit(): void {
-    // Subscribe to route changes and update menu state
-    this.router.events.pipe(filter((event) => event instanceof NavigationEnd));
-  }
-
   toggleMenu(): void {
     this.menuOpen = !this.menuOpen;
     document.body.classList.toggle('no-scroll', this.menuOpen);
+
+    if (this.menuOpen) {
+      setTimeout(() => {
+        if (this.menuOpen) {
+          this.navMenu.nativeElement.querySelector('a')?.focus();
+        }
+      });
+    } else {
+      this.menuToggle.nativeElement.focus();
+    }
+  }
+
+  @HostListener('document:keydown.escape')
+  closeMenuOnEscape(): void {
+    if (this.menuOpen) {
+      this.menuOpen = false;
+      document.body.classList.remove('no-scroll');
+      this.menuToggle.nativeElement.focus();
+    }
   }
 
   closeMenuAndNavigate(): void {

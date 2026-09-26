@@ -7,18 +7,17 @@ import { ScrollMenuComponent } from '../../../components/scroll-menu/scroll-menu
 import { TechnicalToolsSmallComponent } from '../../../components/technical-tools-small/technical-tools-small.component';
 
 @Component({
-  selector: 'app-pattern-hearts',
-  standalone: true,
-  imports: [
-    RouterModule,
-    IntroComponent,
-    CodeGoodBadComponent,
-    BreadcrumbComponent,
-    TechnicalToolsSmallComponent,
-    ScrollMenuComponent,
-  ],
-  templateUrl: './pattern-hearts.component.html',
-  styleUrl: './pattern-hearts.component.scss',
+    selector: 'app-pattern-hearts',
+    imports: [
+        RouterModule,
+        IntroComponent,
+        CodeGoodBadComponent,
+        BreadcrumbComponent,
+        TechnicalToolsSmallComponent,
+        ScrollMenuComponent,
+    ],
+    templateUrl: './pattern-hearts.component.html',
+    styleUrl: './pattern-hearts.component.scss'
 })
 export class PatternHeartsComponent {
   title: string = 'Love Comes in All Patterns: Illustrated Hearts';

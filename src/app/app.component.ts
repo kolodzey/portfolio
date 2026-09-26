@@ -4,10 +4,9 @@ import { FooterComponent } from './core/footer/footer.component';
 import { MenuComponent } from './core/menu/menu.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, MenuComponent, FooterComponent],
-  templateUrl: './app.component.html',
+    selector: 'app-root',
+    imports: [RouterOutlet, MenuComponent, FooterComponent],
+    templateUrl: './app.component.html'
 })
 export class AppComponent {
   title = 'portfolio';

@@ -4,11 +4,10 @@ import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { filter } from 'rxjs';
 
 @Component({
-  selector: 'app-menu',
-  standalone: true,
-  imports: [CommonModule, RouterModule],
-  templateUrl: 'menu.component.html',
-  styleUrl: 'menu.component.scss',
+    selector: 'app-menu',
+    imports: [CommonModule, RouterModule],
+    templateUrl: 'menu.component.html',
+    styleUrl: 'menu.component.scss'
 })
 export class MenuComponent implements OnInit {
   menuOpen = false;

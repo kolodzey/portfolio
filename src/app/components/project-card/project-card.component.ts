@@ -5,10 +5,9 @@ import { OverviewCardData } from '../../models/card.model';
 import { ProjectTeaserService } from '../../services/project-teaser.service';
 
 @Component({
-  selector: 'app-project-card',
-  standalone: true,
-  imports: [RouterModule, CommonModule],
-  templateUrl: './project-card.component.html',
+    selector: 'app-project-card',
+    imports: [RouterModule, CommonModule],
+    templateUrl: './project-card.component.html'
 })
 export class ProjectCardComponent {
   projectTeasers: OverviewCardData[] = [];

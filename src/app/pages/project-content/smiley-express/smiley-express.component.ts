@@ -7,18 +7,17 @@ import { ScrollMenuComponent } from '../../../components/scroll-menu/scroll-menu
 import { TechnicalToolsSmallComponent } from '../../../components/technical-tools-small/technical-tools-small.component';
 
 @Component({
-  selector: 'app-smiley-express',
-  standalone: true,
-  imports: [
-    BreadcrumbComponent,
-    RouterModule,
-    IntroComponent,
-    TechnicalToolsSmallComponent,
-    ScrollMenuComponent,
-    CodeGoodBadComponent,
-  ],
-  templateUrl: './smiley-express.component.html',
-  styleUrl: './smiley-express.component.scss',
+    selector: 'app-smiley-express',
+    imports: [
+        BreadcrumbComponent,
+        RouterModule,
+        IntroComponent,
+        TechnicalToolsSmallComponent,
+        ScrollMenuComponent,
+        CodeGoodBadComponent,
+    ],
+    templateUrl: './smiley-express.component.html',
+    styleUrl: './smiley-express.component.scss'
 })
 export class SmileyExpressComponent {
   title: string = 'Smiley Express: Hop On and Pick a Mood!';

@@ -9,18 +9,17 @@ import { OverviewCardData } from '../../models/card.model';
 import { ArticleService } from '../../services/article.service';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [
-    RouterModule,
-    HeroHomeComponent,
-    IntroButtonComponent,
-    CollageYogaComponent,
-    CommonModule,
-    ExpertiseTagGroupComponent,
-  ],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
+    selector: 'app-home',
+    imports: [
+        RouterModule,
+        HeroHomeComponent,
+        IntroButtonComponent,
+        CollageYogaComponent,
+        CommonModule,
+        ExpertiseTagGroupComponent,
+    ],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss'
 })
 export class HomeComponent {
   articles: OverviewCardData[];

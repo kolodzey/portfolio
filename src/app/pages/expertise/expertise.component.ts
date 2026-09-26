@@ -5,15 +5,14 @@ import { ExpertiseTagGroupComponent } from '../../components/expertise-tag-group
 import { IntroComponent } from '../../components/intro/intro.component';
 
 @Component({
-  selector: 'app-expertise',
-  standalone: true,
-  imports: [
-    RouterModule,
-    IntroComponent,
-    ExpertiseTagGroupComponent,
-    ExpertiseBoxesComponent,
-  ],
-  templateUrl: './expertise.component.html',
+    selector: 'app-expertise',
+    imports: [
+        RouterModule,
+        IntroComponent,
+        ExpertiseTagGroupComponent,
+        ExpertiseBoxesComponent,
+    ],
+    templateUrl: './expertise.component.html'
 })
 export class ExpertiseComponent {
   title: string = 'My Core Strengths';

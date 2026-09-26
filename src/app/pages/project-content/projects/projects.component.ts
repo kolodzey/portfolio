@@ -5,17 +5,15 @@ import { IntroComponent } from '../../../components/intro/intro.component';
 import { ProjectCardComponent } from '../../../components/project-card/project-card.component';
 
 @Component({
-  selector: 'app-projects',
-  standalone: true,
-  imports: [
-    RouterModule,
-    IntroComponent,
-    ProjectCardComponent,
-
-    CollageYogaComponent,
-  ],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss',
+    selector: 'app-projects',
+    imports: [
+        RouterModule,
+        IntroComponent,
+        ProjectCardComponent,
+        CollageYogaComponent,
+    ],
+    templateUrl: './projects.component.html',
+    styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
   title: string = 'Where Ideas Take Shape: My Projects';

@@ -5,15 +5,14 @@ import { IntroComponent } from '../../../components/intro/intro.component';
 import { TextImageBlogComponent } from '../../../components/text-image-blog/text-image-blog.component';
 
 @Component({
-  selector: 'app-ux-guidelines',
-  standalone: true,
-  imports: [
-    RouterModule,
-    IntroComponent,
-    BreadcrumbBlogComponent,
-    TextImageBlogComponent,
-  ],
-  templateUrl: './ux-guidelines.component.html',
+    selector: 'app-ux-guidelines',
+    imports: [
+        RouterModule,
+        IntroComponent,
+        BreadcrumbBlogComponent,
+        TextImageBlogComponent,
+    ],
+    templateUrl: './ux-guidelines.component.html'
 })
 export class UxGuidelinesComponent {
   title: string = '7 UX Design Guidelines to Keep in Mind';

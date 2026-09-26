@@ -4,10 +4,9 @@ import { BlogCardComponent } from '../../../components/blog-card/blog-card.compo
 import { IntroComponent } from '../../../components/intro/intro.component';
 
 @Component({
-  selector: 'app-blog',
-  standalone: true,
-  imports: [RouterModule, IntroComponent, BlogCardComponent],
-  templateUrl: './blog.component.html',
+    selector: 'app-blog',
+    imports: [RouterModule, IntroComponent, BlogCardComponent],
+    templateUrl: './blog.component.html'
 })
 export class BlogComponent {
   title: string = 'Beyond Code: Thoughts on Design & Development';

@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-expertise-boxes',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './expertise-boxes.component.html',
-  styleUrl: './expertise-boxes.component.scss',
+    selector: 'app-expertise-boxes',
+    imports: [CommonModule],
+    templateUrl: './expertise-boxes.component.html',
+    styleUrl: './expertise-boxes.component.scss'
 })
 export class ExpertiseBoxesComponent {
   @Input() headline2: string = '';

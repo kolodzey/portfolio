@@ -5,15 +5,14 @@ import { CodeGoodBadComponent } from '../../../components/code-good-bad/code-goo
 import { IntroComponent } from '../../../components/intro/intro.component';
 
 @Component({
-  selector: 'app-angular-accessibility',
-  standalone: true,
-  imports: [
-    RouterModule,
-    IntroComponent,
-    CodeGoodBadComponent,
-    BreadcrumbBlogComponent,
-  ],
-  templateUrl: './angular-accessibility.component.html',
+    selector: 'app-angular-accessibility',
+    imports: [
+        RouterModule,
+        IntroComponent,
+        CodeGoodBadComponent,
+        BreadcrumbBlogComponent,
+    ],
+    templateUrl: './angular-accessibility.component.html'
 })
 export class AngularAccessibilityComponent {
   title: string =

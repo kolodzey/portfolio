@@ -4,11 +4,10 @@ import { BreadcrumbBlogComponent } from '../../../components/breadcrumb-blog/bre
 import { IntroComponent } from '../../../components/intro/intro.component';
 
 @Component({
-  selector: 'app-keynote-plugin-development',
-  standalone: true,
-  imports: [BreadcrumbBlogComponent, IntroComponent, RouterModule],
-  templateUrl: './keynote-plugin-development.component.html',
-  styleUrl: './keynote-plugin-development.component.scss',
+    selector: 'app-keynote-plugin-development',
+    imports: [BreadcrumbBlogComponent, IntroComponent, RouterModule],
+    templateUrl: './keynote-plugin-development.component.html',
+    styleUrl: './keynote-plugin-development.component.scss'
 })
 export class KeynotePluginDevelopmentComponent {
   title: string =

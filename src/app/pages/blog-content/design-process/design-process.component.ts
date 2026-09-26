@@ -4,11 +4,10 @@ import { BreadcrumbBlogComponent } from '../../../components/breadcrumb-blog/bre
 import { IntroComponent } from '../../../components/intro/intro.component';
 
 @Component({
-  selector: 'app-design-process',
-  standalone: true,
-  imports: [RouterModule, BreadcrumbBlogComponent, IntroComponent],
-  templateUrl: './design-process.component.html',
-  styleUrl: './design-process.component.scss',
+    selector: 'app-design-process',
+    imports: [RouterModule, BreadcrumbBlogComponent, IntroComponent],
+    templateUrl: './design-process.component.html',
+    styleUrl: './design-process.component.scss'
 })
 export class DesignProcessComponent {
   title: string = 'My Design Process: A Practical Guide Shaped by Experience';

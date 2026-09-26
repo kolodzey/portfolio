@@ -3,11 +3,10 @@ import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-phases-project',
-  standalone: true,
-  imports: [RouterModule, CommonModule],
-  templateUrl: './phases-project.component.html',
-  styleUrl: './phases-project.component.scss',
+    selector: 'app-phases-project',
+    imports: [RouterModule, CommonModule],
+    templateUrl: './phases-project.component.html',
+    styleUrl: './phases-project.component.scss'
 })
 export class PhasesProjectComponent {
   @Input() phasesCount: string = '';

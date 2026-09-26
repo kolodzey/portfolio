@@ -6,17 +6,16 @@ import { ScrollMenuComponent } from '../../../components/scroll-menu/scroll-menu
 import { TechnicalToolsBigComponent } from '../../../components/technical-tools-big/technical-tools-big.component';
 
 @Component({
-  selector: 'app-yoga-application',
-  standalone: true,
-  imports: [
-    RouterModule,
-    CodeGoodBadComponent,
-    BreadcrumbComponent,
-    TechnicalToolsBigComponent,
-    ScrollMenuComponent,
-  ],
-  templateUrl: './yoga-application.component.html',
-  styleUrl: './yoga-application.component.scss',
+    selector: 'app-yoga-application',
+    imports: [
+        RouterModule,
+        CodeGoodBadComponent,
+        BreadcrumbComponent,
+        TechnicalToolsBigComponent,
+        ScrollMenuComponent,
+    ],
+    templateUrl: './yoga-application.component.html',
+    styleUrl: './yoga-application.component.scss'
 })
 export class YogaApplicationComponent {
   linkBreadcrumb: string = '/projects/open-stillness-application';

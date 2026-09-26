@@ -2,10 +2,9 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-list',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './list.component.html',
+    selector: 'app-list',
+    imports: [CommonModule],
+    templateUrl: './list.component.html'
 })
 export class ListComponent {
   @Input() headline: string = '';

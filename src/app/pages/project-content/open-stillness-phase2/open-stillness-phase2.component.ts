@@ -4,11 +4,10 @@ import { BreadcrumbComponent } from '../../../components/breadcrumb/breadcrumb.c
 import { ScrollMenuComponent } from '../../../components/scroll-menu/scroll-menu.component';
 
 @Component({
-  selector: 'app-open-stillness-phase2',
-  standalone: true,
-  imports: [RouterModule, BreadcrumbComponent, ScrollMenuComponent],
-  templateUrl: './open-stillness-phase2.component.html',
-  styleUrl: './open-stillness-phase2.component.scss',
+    selector: 'app-open-stillness-phase2',
+    imports: [RouterModule, BreadcrumbComponent, ScrollMenuComponent],
+    templateUrl: './open-stillness-phase2.component.html',
+    styleUrl: './open-stillness-phase2.component.scss'
 })
 export class OpenStillnessPhase2Component {
   linkBreadcrumb: string = '/projects/open-stillness-application';

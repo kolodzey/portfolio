@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-text-image-blog',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './text-image-blog.component.html',
-  styleUrl: './text-image-blog.component.scss',
+    selector: 'app-text-image-blog',
+    imports: [CommonModule],
+    templateUrl: './text-image-blog.component.html',
+    styleUrl: './text-image-blog.component.scss'
 })
 export class TextImageBlogComponent {
   @Input() headlineH2: string = '';

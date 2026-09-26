@@ -6,16 +6,15 @@ import { ListComponent } from '../../../components/list/list.component';
 import { TextHighlightComponent } from '../../../components/text-highlight/text-highlight.component';
 
 @Component({
-  selector: 'app-usability-testing',
-  standalone: true,
-  imports: [
-    RouterModule,
-    IntroComponent,
-    ListComponent,
-    BreadcrumbBlogComponent,
-    TextHighlightComponent,
-  ],
-  templateUrl: './usability-testing.component.html',
+    selector: 'app-usability-testing',
+    imports: [
+        RouterModule,
+        IntroComponent,
+        ListComponent,
+        BreadcrumbBlogComponent,
+        TextHighlightComponent,
+    ],
+    templateUrl: './usability-testing.component.html'
 })
 export class UsabilityTestingComponent {
   title: string = 'Usability Testing Made Easy - in 4 Steps';

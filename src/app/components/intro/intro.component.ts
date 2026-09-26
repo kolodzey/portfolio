@@ -2,10 +2,9 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-intro',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './intro.component.html',
+    selector: 'app-intro',
+    imports: [CommonModule],
+    templateUrl: './intro.component.html'
 })
 export class IntroComponent {
   @Input() title: string = '';

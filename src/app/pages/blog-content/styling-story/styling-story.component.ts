@@ -5,15 +5,14 @@ import { IntroComponent } from '../../../components/intro/intro.component';
 import { MyQuoteComponent } from '../../../components/my-quote/my-quote.component';
 
 @Component({
-  selector: 'app-styling-story',
-  standalone: true,
-  imports: [
-    RouterModule,
-    BreadcrumbBlogComponent,
-    IntroComponent,
-    MyQuoteComponent,
-  ],
-  templateUrl: './styling-story.component.html',
+    selector: 'app-styling-story',
+    imports: [
+        RouterModule,
+        BreadcrumbBlogComponent,
+        IntroComponent,
+        MyQuoteComponent,
+    ],
+    templateUrl: './styling-story.component.html'
 })
 export class StylingStoryComponent {
   title: string = 'My Styling Story: From CSS to Tailwind';

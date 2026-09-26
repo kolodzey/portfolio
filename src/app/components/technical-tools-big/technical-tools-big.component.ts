@@ -2,10 +2,9 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-technical-tools-big',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './technical-tools-big.component.html',
+    selector: 'app-technical-tools-big',
+    imports: [CommonModule],
+    templateUrl: './technical-tools-big.component.html'
 })
 export class TechnicalToolsBigComponent {
   @Input() headlineTools1: string = '';

@@ -7,17 +7,16 @@ import { ScrollMenuComponent } from '../../../components/scroll-menu/scroll-menu
 import { TechnicalToolsSmallComponent } from '../../../components/technical-tools-small/technical-tools-small.component';
 
 @Component({
-  selector: 'app-curly-arrows',
-  standalone: true,
-  imports: [
-    RouterModule,
-    BreadcrumbComponent,
-    IntroComponent,
-    TechnicalToolsSmallComponent,
-    ScrollMenuComponent,
-    CodeGoodBadComponent,
-  ],
-  templateUrl: './curly-arrows.component.html',
+    selector: 'app-curly-arrows',
+    imports: [
+        RouterModule,
+        BreadcrumbComponent,
+        IntroComponent,
+        TechnicalToolsSmallComponent,
+        ScrollMenuComponent,
+        CodeGoodBadComponent,
+    ],
+    templateUrl: './curly-arrows.component.html'
 })
 export class CurlyArrowsComponent {
   title: string = 'Curly Arrows: Point with Personality';

@@ -7,18 +7,17 @@ import { ScrollMenuComponent } from '../../../components/scroll-menu/scroll-menu
 import { TechnicalToolsBigComponent } from '../../../components/technical-tools-big/technical-tools-big.component';
 
 @Component({
-  selector: 'app-hexify',
-  standalone: true,
-  imports: [
-    RouterModule,
-    IntroComponent,
-    CodeGoodBadComponent,
-    BreadcrumbComponent,
-    TechnicalToolsBigComponent,
-    ScrollMenuComponent,
-  ],
-  templateUrl: './hexify.component.html',
-  styleUrl: './hexify.component.scss',
+    selector: 'app-hexify',
+    imports: [
+        RouterModule,
+        IntroComponent,
+        CodeGoodBadComponent,
+        BreadcrumbComponent,
+        TechnicalToolsBigComponent,
+        ScrollMenuComponent,
+    ],
+    templateUrl: './hexify.component.html',
+    styleUrl: './hexify.component.scss'
 })
 export class HexifyComponent {
   title: string = 'Hexify Plugin: Seamlessly Bring Figma Colors to Code';

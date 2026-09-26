@@ -8,19 +8,18 @@ import { ScrollMenuComponent } from '../../../components/scroll-menu/scroll-menu
 import { TechnicalToolsSmallComponent } from '../../../components/technical-tools-small/technical-tools-small.component';
 
 @Component({
-  selector: 'app-jsonify',
-  standalone: true,
-  imports: [
-    RouterModule,
-    IntroComponent,
-    ListComponent,
-    CodeGoodBadComponent,
-    BreadcrumbComponent,
-    TechnicalToolsSmallComponent,
-    ScrollMenuComponent,
-  ],
-  templateUrl: './jsonify.component.html',
-  styleUrl: './jsonify.component.scss',
+    selector: 'app-jsonify',
+    imports: [
+        RouterModule,
+        IntroComponent,
+        ListComponent,
+        CodeGoodBadComponent,
+        BreadcrumbComponent,
+        TechnicalToolsSmallComponent,
+        ScrollMenuComponent,
+    ],
+    templateUrl: './jsonify.component.html',
+    styleUrl: './jsonify.component.scss'
 })
 export class JsonifyComponent {
   title: string = 'JSONify Plugin: Export Text into Structured JSON Data';

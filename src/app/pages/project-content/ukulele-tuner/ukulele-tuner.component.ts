@@ -6,17 +6,16 @@ import { ScrollMenuComponent } from '../../../components/scroll-menu/scroll-menu
 import { TechnicalToolsBigComponent } from '../../../components/technical-tools-big/technical-tools-big.component';
 
 @Component({
-  selector: 'app-ukulele-tuner',
-  standalone: true,
-  imports: [
-    RouterModule,
-    BreadcrumbComponent,
-    IntroComponent,
-    TechnicalToolsBigComponent,
-    ScrollMenuComponent,
-  ],
-  templateUrl: './ukulele-tuner.component.html',
-  styleUrl: './ukulele-tuner.component.scss',
+    selector: 'app-ukulele-tuner',
+    imports: [
+        RouterModule,
+        BreadcrumbComponent,
+        IntroComponent,
+        TechnicalToolsBigComponent,
+        ScrollMenuComponent,
+    ],
+    templateUrl: './ukulele-tuner.component.html',
+    styleUrl: './ukulele-tuner.component.scss'
 })
 export class UkuleleTunerComponent {
   title: string = 'Aloha Tune: A Browser-Based Ukulele Tuner';

@@ -7,17 +7,16 @@ import { PhasesProjectComponent } from '../../../components/phases-project/phase
 import { TechnicalToolsBigComponent } from '../../../components/technical-tools-big/technical-tools-big.component';
 
 @Component({
-  selector: 'app-open-stillness',
-  standalone: true,
-  imports: [
-    RouterModule,
-    IntroComponent,
-    MyQuoteComponent,
-    BreadcrumbComponent,
-    PhasesProjectComponent,
-    TechnicalToolsBigComponent,
-  ],
-  templateUrl: './open-stillness.component.html',
+    selector: 'app-open-stillness',
+    imports: [
+        RouterModule,
+        IntroComponent,
+        MyQuoteComponent,
+        BreadcrumbComponent,
+        PhasesProjectComponent,
+        TechnicalToolsBigComponent,
+    ],
+    templateUrl: './open-stillness.component.html'
 })
 export class OpenStillnessComponent {
   title: string =

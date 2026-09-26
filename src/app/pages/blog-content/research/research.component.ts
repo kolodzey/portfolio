@@ -4,11 +4,10 @@ import { BreadcrumbBlogComponent } from '../../../components/breadcrumb-blog/bre
 import { IntroComponent } from '../../../components/intro/intro.component';
 
 @Component({
-  selector: 'app-research',
-  standalone: true,
-  imports: [RouterModule, IntroComponent, BreadcrumbBlogComponent],
-  templateUrl: './research.component.html',
-  styleUrl: './research.component.scss',
+    selector: 'app-research',
+    imports: [RouterModule, IntroComponent, BreadcrumbBlogComponent],
+    templateUrl: './research.component.html',
+    styleUrl: './research.component.scss'
 })
 export class ResearchComponent {
   title: string = 'Best Use of Quantitative & Qualitative Research';

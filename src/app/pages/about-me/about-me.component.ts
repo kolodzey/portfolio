@@ -6,10 +6,9 @@ import { IntroComponent } from '../../components/intro/intro.component';
   selector: 'app-about-me',
   imports: [RouterModule, IntroComponent],
   templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss',
 })
 export class AboutMeComponent {
   title: string = 'How I Found My Place in Tech';
   text: string =
-    'I started my journey in design, driven by a curiosity to understand how things are made. That same mindset led me to software development, where I found the perfect mix of creativity, logic, and problem-solving. Now, I combine design and code to craft intuitive, meaningful digital experiences.';
+    'I started in product design, moved into software development, and later found my way into UX/UI. Over time, I stopped seeing design and engineering as separate paths. Today, I work across both: shaping experiences, understanding the systems behind them, and turning ideas into products people can actually use.';
 }

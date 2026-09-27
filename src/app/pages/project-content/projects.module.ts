@@ -9,7 +9,6 @@ import { OpenStillnessComponent } from './open-stillness/open-stillness.componen
 import { PatternHeartsComponent } from './pattern-hearts/pattern-hearts.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SmileyExpressComponent } from './smiley-express/smiley-express.component';
-import { UkuleleTunerComponent } from './ukulele-tuner/ukulele-tuner.component';
 import { YogaApplicationComponent } from './yoga-application/yoga-application.component';
 
 const routes: Routes = [
@@ -25,7 +24,6 @@ const routes: Routes = [
   { path: 'figma-pattern-hearts', component: PatternHeartsComponent },
   { path: 'figma-curly-arrows', component: CurlyArrowsComponent },
   { path: 'figma-smiley-express', component: SmileyExpressComponent },
-  { path: 'ukulele-tuner', component: UkuleleTunerComponent },
 ];
 
 @NgModule({

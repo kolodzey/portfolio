@@ -65,6 +65,7 @@ h4 {
   line-height: semantic.$lineheight-heading;
   font-weight: semantic.$font-weight-medium;
   color: token.$gray-100;
+  text-align: center;
 }
 
 h1 {
@@ -387,6 +388,10 @@ code {
   align-items: center;
   text-decoration: none;
   gap: token.$spacing-unit-large;
+}
+
+h1 {
+  white-space: pre-line;
 }
 
 // ========================================================================

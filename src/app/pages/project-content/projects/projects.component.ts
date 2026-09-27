@@ -1,17 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CollageYogaComponent } from '../../../components/collage-yoga/collage-yoga.component';
 import { IntroComponent } from '../../../components/intro/intro.component';
 import { ProjectCardComponent } from '../../../components/project-card/project-card.component';
 
 @Component({
   selector: 'app-projects',
-  imports: [
-    RouterModule,
-    IntroComponent,
-    ProjectCardComponent,
-    CollageYogaComponent,
-  ],
+  imports: [RouterModule, IntroComponent, ProjectCardComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })

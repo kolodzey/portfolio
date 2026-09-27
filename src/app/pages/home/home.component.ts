@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CollageYogaComponent } from '../../components/collage-yoga/collage-yoga.component';
 import { ExpertiseTagGroupComponent } from '../../components/expertise-tag-group/expertise-tag-group.component';
 import { HeroHomeComponent } from '../../components/hero-home/hero-home.component';
 import { IntroButtonComponent } from '../../components/intro-button/intro-button.component';
@@ -9,17 +8,16 @@ import { OverviewCardData } from '../../models/card.model';
 import { ArticleService } from '../../services/article.service';
 
 @Component({
-    selector: 'app-home',
-    imports: [
-        RouterModule,
-        HeroHomeComponent,
-        IntroButtonComponent,
-        CollageYogaComponent,
-        CommonModule,
-        ExpertiseTagGroupComponent,
-    ],
-    templateUrl: './home.component.html',
-    styleUrl: './home.component.scss'
+  selector: 'app-home',
+  imports: [
+    RouterModule,
+    HeroHomeComponent,
+    IntroButtonComponent,
+    CommonModule,
+    ExpertiseTagGroupComponent,
+  ],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss',
 })
 export class HomeComponent {
   articles: OverviewCardData[];

@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ContactComponent } from '../../components/contact/contact.component';
 import { IntroComponent } from '../../components/intro/intro.component';
 
 @Component({
-    selector: 'app-about-me',
-    imports: [RouterModule, ContactComponent, IntroComponent],
-    templateUrl: './about-me.component.html',
-    styleUrl: './about-me.component.scss'
+  selector: 'app-about-me',
+  imports: [RouterModule, IntroComponent],
+  templateUrl: './about-me.component.html',
+  styleUrl: './about-me.component.scss',
 })
 export class AboutMeComponent {
   title: string = 'How I Found My Place in Tech';

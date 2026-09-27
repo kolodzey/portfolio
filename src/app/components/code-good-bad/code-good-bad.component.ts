@@ -1,9 +1,8 @@
-import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-code-good-bad',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './code-good-bad.component.html',
     styleUrl: './code-good-bad.component.scss'
 })

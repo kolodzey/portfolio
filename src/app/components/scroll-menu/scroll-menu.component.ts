@@ -1,9 +1,8 @@
-import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-scroll-menu',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './scroll-menu.component.html'
 })
 export class ScrollMenuComponent {

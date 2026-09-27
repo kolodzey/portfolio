@@ -1,9 +1,8 @@
-import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-list',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './list.component.html'
 })
 export class ListComponent {

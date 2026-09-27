@@ -1,4 +1,6 @@
 <div class="border-standard radius-l my-quote mb-32 mt-16">
-  <img *ngIf="imageUrl" [src]="imageUrl" alt="" class="m-middle pb-24" />
+  @if (imageUrl) {
+    <img [src]="imageUrl" alt="" class="m-middle pb-24" />
+  }
   <pre><code [innerHTML]="formattedCode"></code></pre>
 </div>

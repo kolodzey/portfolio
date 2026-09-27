@@ -1,12 +1,11 @@
 <section>
   <div class="container-m m-middle">
     <h2>{{ headlineH2 }}</h2>
-    <p
-      *ngFor="let paragraph of paragraphs; let isLast = last"
-      [ngClass]="{ 'mb-48': isLast }"
-    >
-      {{ paragraph }}
-    </p>
+    @for (paragraph of paragraphs; track $index; let isLast = $last) {
+      <p [ngClass]="{ 'mb-48': isLast }">
+        {{ paragraph }}
+      </p>
+    }
     <picture>
       <source [srcset]="imgWebpSrc" type="image/webp" />
       <img

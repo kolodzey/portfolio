@@ -1,10 +1,9 @@
-import { CommonModule } from '@angular/common';
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-menu',
-    imports: [CommonModule, RouterModule],
+    imports: [RouterModule],
     templateUrl: 'menu.component.html',
     styleUrl: 'menu.component.scss'
 })

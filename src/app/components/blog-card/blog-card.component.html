@@ -2,12 +2,13 @@
   class="justify-content-start d-flex flex-wrap gap-32 container-l"
   id="card"
 >
-  <a
-    *ngFor="let article of articles"
-    [routerLink]="article.absoluteLink ? article.absoluteLink : article.link"
-    class="box padding radius-l text-left full-link border-standard"
-  >
-    <img [src]="article.image" alt="" class="m-middle" />
-    <h3>{{ article.title }}</h3>
-  </a>
+  @for (article of articles; track article) {
+    <a
+      [routerLink]="article.absoluteLink ? article.absoluteLink : article.link"
+      class="box padding radius-l text-left full-link border-standard"
+    >
+      <img [src]="article.image" alt="" class="m-middle" />
+      <h3>{{ article.title }}</h3>
+    </a>
+  }
 </article>

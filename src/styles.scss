@@ -382,6 +382,13 @@ code {
     token.$spacing-unit-large * 15;
 }
 
+.link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  gap: token.$spacing-unit-large;
+}
+
 // ========================================================================
 // Responsive Styles
 // ========================================================================

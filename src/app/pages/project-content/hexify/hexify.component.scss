@@ -1,10 +1,5 @@
 @use "../../../../styles/tokens" as token;
 
-.link {
-  text-decoration: none;
-  gap: token.$spacing-unit-large;
-}
-
 img.user-flow {
   max-height: 700px;
 }

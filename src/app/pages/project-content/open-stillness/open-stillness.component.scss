@@ -3,10 +3,10 @@
 .highlight {
   font-size: 2rem;
   font-weight: 600;
-  color: token.$teal-300;
+  color: token.$violet-300;
 }
 
-h3 {
+#highlights h3 {
   text-align: left;
   margin-top: 0;
   margin-bottom: 0;
@@ -18,4 +18,21 @@ p.highlight {
 
 p.text-highlight {
   margin-top: 0.3rem;
+}
+
+caption {
+  width: 100%;
+  font-size: 1rem;
+  color: token.$gray-400;
+  margin-top: 0.5rem;
+}
+
+.guided-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.divider {
+  color: token.$violet-300;
 }

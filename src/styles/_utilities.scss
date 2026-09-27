@@ -85,10 +85,6 @@
   display: flex;
 }
 
-.gap-32 {
-  gap: token.$spacing-unit-large * 4;
-}
-
 .box-1 {
   flex: 1;
 }
@@ -102,7 +98,7 @@
 // ========================================================================
 // Margin
 .main-margin {
-  margin-bottom: token.$spacing-unit-large * 25;
+  margin-bottom: token.$spacing-unit-large * 19;
 }
 
 .mb-8 {
@@ -262,6 +258,10 @@
 // ========================================================================
 .gap-16 {
   gap: token.$spacing-unit-large * 2;
+}
+
+.gap-24 {
+  gap: token.$spacing-unit-large * 3;
 }
 
 .gap-32 {

@@ -1,9 +1,8 @@
-import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-intro',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './intro.component.html'
 })
 export class IntroComponent {

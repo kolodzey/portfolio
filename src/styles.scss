@@ -11,6 +11,10 @@ html {
 
 body {
   background-color: semantic.$color-bg;
+  background-image:
+    linear-gradient(rgba(28, 28, 28, 0.9), rgba(28, 28, 28, 0.9)),
+    url("/textures/core-pattern.webp");
+  background-repeat: repeat;
   font-family: semantic.$font-family-base;
   font-weight: semantic.$font-weight-light;
   line-height: semantic.$lineheight-body;
@@ -61,21 +65,22 @@ h4 {
   line-height: semantic.$lineheight-heading;
   font-weight: semantic.$font-weight-medium;
   color: token.$gray-100;
+  text-align: center;
 }
 
 h1 {
-  font-size: 3.06rem;
+  font-size: 3rem;
   margin: 0 0 token.$spacing-unit-large * 5;
   text-align: center;
 }
 
 h2 {
-  font-size: 2.44rem;
+  font-size: 2rem;
   margin: 0 0 token.$spacing-unit-large * 5;
 }
 
 h3 {
-  font-size: 1.56rem;
+  font-size: 1.5rem;
   margin-bottom: token.$spacing-unit-large * 3;
   margin-top: token.$spacing-unit-large * 6;
 }
@@ -174,7 +179,9 @@ button,
   border-radius: semantic.$radius-l;
   cursor: pointer;
   box-shadow: token.$elevation-xs;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
   background: transparent;
 
   &:hover {
@@ -374,6 +381,17 @@ code {
   background-color: semantic.$color-bg-message;
   padding: token.$spacing-unit-large * 12 token.$spacing-unit-large * 13
     token.$spacing-unit-large * 15;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  gap: token.$spacing-unit-large;
+}
+
+h1 {
+  white-space: pre-line;
 }
 
 // ========================================================================

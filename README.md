@@ -1,22 +1,46 @@
-# My Work & Practice website
+# Creative Journey
 
-This is my personal portfolio website created with Angular. It serves as:
+My personal portfolio, built to bring together the different parts of my work across product design, design engineering, design systems, and frontend engineering.
 
- - A showcase of my projects
- - My expertise
- - An introduction about me
- - A personal blog
+The site reflects how I like to work: understanding the whole problem, moving between design and implementation, and carrying ideas through from early thinking to working products.
 
+## About the portfolio
 
-## Technologies Used
+This portfolio is both a showcase of selected work and an evolving space for documenting how I think about design, engineering, systems, and the workflows that connect them.
 
-- **Angular**: Frontend framework for building dynamic single-page applications.
-- **TypeScript**: For type-safe coding and better developer experience.
-- **SCSS**: For styling and responsive layout.
-- **Firebase**: Used for hosting the application.
+The current version includes:
 
+- selected product and tooling projects
+- my core strengths across design and engineering
+- writing about design, development, accessibility, and workflows
+- a personal About section tracing my path from art and product design into digital products and software development
 
-## Live Demo
-Experience the app here: [Web Application](https://creativejourney.dev)
+The flagship project is **Open Stillness**, an independent seasonal platform for Meditation, Breathwork, and Yin Stretching that I designed, illustrated, developed, and continue to evolve end to end.
 
-<img width="1470" alt="expertise" src="https://github.com/user-attachments/assets/fddf6862-538e-47ab-b281-3814e20e4d61" />
+## Core strengths
+
+The portfolio is structured around four connected areas:
+
+### Product Design
+
+Understanding the whole problem and shaping experiences from structure and user flows to interaction details.
+
+### Design Engineering
+
+Connecting design intent with implementation and reducing unnecessary handoffs between the two.
+
+### Frontend Engineering
+
+Building responsive, accessible, and maintainable interfaces with a strong focus on interaction quality and component architecture.
+
+### Design Systems
+
+Creating reusable structures that help products stay coherent and scalable as they evolve.
+
+## Built with
+
+- Angular 21
+- TypeScript
+- Tailwind CSS
+- HTML / SCSS
+- Firebase Hosting

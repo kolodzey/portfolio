@@ -1,9 +1,11 @@
 <div class="toolbox radius-l elevation-xs border-standard">
   <h3>{{ headline }}</h3>
   <ul>
-    <li *ngFor="let tool of tools">
-      <strong>{{ tool.name }}</strong
-      >{{ tool.description }}
-    </li>
+    @for (tool of tools; track tool) {
+      <li>
+        <strong>{{ tool.name }}</strong
+        >{{ tool.description }}
+      </li>
+    }
   </ul>
 </div>

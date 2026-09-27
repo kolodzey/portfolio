@@ -2,10 +2,10 @@
   <app-intro [title]="title" [text]="text"></app-intro>
 </section>
 
+<img src="general/arrow.svg" alt="" class="m-middle" />
+
 <div class="container-m m-middle">
   <app-expertise-tag-group></app-expertise-tag-group>
-
-  <img src="general/connected-dots.svg" alt="" class="main-margin" />
 </div>
 
 <section id="expertise-boxes" class="main-margin">
@@ -24,13 +24,6 @@
   ></app-expertise-boxes>
 
   <app-expertise-boxes
-    [color]="'systems'"
-    [headline2]="h2Systems"
-    [headline3]="h3Systems"
-    [expertiseText]="textSystems"
-  ></app-expertise-boxes>
-
-  <app-expertise-boxes
     [color]="'frontend'"
     [headline2]="h2Frontend"
     [headline3]="h3Frontend"
@@ -38,20 +31,20 @@
   ></app-expertise-boxes>
 
   <app-expertise-boxes
-    [color]="'plugin'"
-    [headline2]="h2Plugin"
-    [headline3]="h3Plugin"
-    [expertiseText]="textPlugin"
+    [color]="'systems'"
+    [headline2]="h2Systems"
+    [headline3]="h3Systems"
+    [expertiseText]="textSystems"
   ></app-expertise-boxes>
 </section>
 
 <section id="expertise-diagram" class="container-m m-middle text-center">
   <h2>How It All Connects</h2>
   <p class="mb-88">
-    These aren't just five separate skills: they're interwoven practices that
-    shape how I design, build, and iterate. Accessibility, Design Systems and
-    Figma Plugin Development sit at the core, bridging the creative and
-    technical, because meaningful products happen where design and code meet.
+    I see these disciplines as parts of the same process. Product Design asks
+    what the experience should be. Design Engineering bridges intent and
+    implementation. Frontend Engineering turns ideas into working products,
+    while Design Systems create the structure that helps everything stay
+    consistent and evolve over time.
   </p>
-  <img src="general/expertise-diagram.svg" alt="" class="main-margin" />
 </section>

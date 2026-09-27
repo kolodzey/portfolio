@@ -16,14 +16,13 @@
           aria-controls="main-navigation"
           [attr.aria-expanded]="menuOpen"
         >
-          <ng-container *ngIf="!menuOpen; else closeIcon">
+          @if (!menuOpen) {
             <i class="material-icons" aria-hidden="true">menu</i>
-          </ng-container>
-          <ng-template #closeIcon>
+          } @else {
             <span class="close-icon">
               <i class="material-icons" aria-hidden="true">close</i>
             </span>
-          </ng-template>
+          }
         </button>
 
         <!-- Main Navigation -->
@@ -33,7 +32,8 @@
           class="nav-menu d-flex gap-32"
           [class.active]="menuOpen"
         >
-          <li *ngFor="let item of menuItems" class="nav-item">
+          @for (item of menuItems; track item) {
+          <li class="nav-item">
             <a
               [routerLink]="item.link"
               routerLinkActive="active-link"
@@ -42,6 +42,7 @@
               {{ item.label }}
             </a>
           </li>
+          }
         </ul>
       </nav>
     </div>

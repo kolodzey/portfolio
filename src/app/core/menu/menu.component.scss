@@ -3,6 +3,12 @@
 
 header {
   background-color: semantic.$color-bg;
+  background-image: linear-gradient(
+      rgba(28, 28, 28, 0.9),
+      rgba(28, 28, 28, 0.9)
+    ),
+    url("/textures/core-pattern.webp");
+  background-repeat: repeat;
 }
 
 .navbar {

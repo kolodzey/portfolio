@@ -5,42 +5,37 @@ import { ExpertiseTagGroupComponent } from '../../components/expertise-tag-group
 import { IntroComponent } from '../../components/intro/intro.component';
 
 @Component({
-    selector: 'app-expertise',
-    imports: [
-        RouterModule,
-        IntroComponent,
-        ExpertiseTagGroupComponent,
-        ExpertiseBoxesComponent,
-    ],
-    templateUrl: './expertise.component.html'
+  selector: 'app-expertise',
+  imports: [
+    RouterModule,
+    IntroComponent,
+    ExpertiseTagGroupComponent,
+    ExpertiseBoxesComponent,
+  ],
+  templateUrl: './expertise.component.html',
 })
 export class ExpertiseComponent {
   title: string = 'My Core Strengths';
   text: string =
-    'I work at the intersection of design and development, blending systems thinking, creative tools, and inclusive frontend architecture to craft digital products with care and clarity. These five interconnected pillars form the foundation of my expertise:';
+    'My work spans product thinking, interaction, systems, and implementation. I’m most effective when I can move between these layers, understand how they influence one another, and carry ideas through with both design intent and technical awareness.';
 
-  h2Usability: string = 'Usability Testing';
-  h3Usability: string = 'Making assumptions visible.';
+  h2Usability: string = 'Product Design';
+  h3Usability: string = 'Understanding the whole problem';
   textUsability: string =
-    'Through user interviews and interface testing, I validate ideas and refine experiences to better meet real needs.';
+    'I shape product experiences from structure and user flows to interaction details, balancing user needs, product goals, and technical reality.';
 
-  h2A11y: string = 'Accessibility';
-  h3A11y: string = 'Designing for everyone.';
+  h2A11y: string = 'Design Engineering';
+  h3A11y: string = 'Making design and code part of the same process.';
   textA11y: string =
-    'I focus on inclusive design and code to make sure digital products are usable by as many people as possible.';
+    'I move between interaction design, prototyping, and implementation to explore ideas quickly and carry design intent into production without unnecessary handoffs.';
 
   h2Systems: string = 'Design Systems';
-  h3Systems: string = 'Scaling creativity through structure.';
+  h3Systems: string = 'Creating structure that helps teams move.';
   textSystems: string =
-    'I work with Figma to build consistent, flexible Design Systems that grow with products and teams.';
+    'I design reusable systems that bring consistency to products while giving both design and development a shared foundation for working efficiently and evolving with confidence.';
 
-  h2Frontend: string = 'Modern Frontend';
-  h3Frontend: string = 'From concept to code.';
+  h2Frontend: string = 'Frontend Engineering';
+  h3Frontend: string = 'Turning ideas into resilient interfaces.';
   textFrontend: string =
-    'With a growing focus on React and a background in Angular, I bring ideas to life with modular, accessible, and scalable frontend code.';
-
-  h2Plugin: string = 'Figma Plugin Development';
-  h3Plugin: string = 'Building tools to enable creative flow.';
-  textPlugin: string =
-    'I create custom plugins that solve real workflow problems, from automating tasks to extending the design process.';
+    'I build responsive, accessible, and maintainable frontend systems with a strong focus on component architecture, interaction quality, and long-term usability.';
 }

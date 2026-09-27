@@ -1,10 +1,11 @@
 <article class="justify-center d-flex flex-wrap gap-32" id="card">
-  <a
-    *ngFor="let projectTeaser of projectTeasers"
-    [routerLink]="projectTeaser.link"
-    class="box radius-l text-left full-link mb-16 border-standard"
-  >
-    <img [src]="projectTeaser.image" alt="" class="m-middle" />
-    <h3>{{ projectTeaser.title }}</h3>
-  </a>
+  @for (projectTeaser of projectTeasers; track projectTeaser) {
+    <a
+      [routerLink]="projectTeaser.link"
+      class="box radius-l text-left full-link mb-16 border-standard"
+    >
+      <img [src]="projectTeaser.image" alt="" class="m-middle" />
+      <h3>{{ projectTeaser.title }}</h3>
+    </a>
+  }
 </article>

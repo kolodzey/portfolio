@@ -8,7 +8,7 @@
       <picture>
         <source srcset="blog/a11y-robot.webp" type="image/webp" />
         <img
-          src="blog/a11y-robot.png"
+          src="blog/a11y-robot.webp"
           alt=""
           class="radius-l mt-64 m-middle robot"
         />
@@ -48,7 +48,7 @@
       [code]="
         'constructor(private titleService: TitleService) {}\n\nngOnInit(): void {\n  this.titleService.setTitle(\'Meditation Library | OpenStillness\');\n}'
       "
-      [imageUrl]="'blog/bad.png'"
+      [imageUrl]="'blog/bad.webp'"
     >
     </app-code-good-bad>
     <p>This method worked, but it had its downsides:</p>
@@ -77,7 +77,7 @@
       [code]="
         'export const routes: Routes = [\n  {\n    path: ROUTES.LIBRARY,\n    component: LibraryComponent,\n    title: \'Meditation Library | OpenStillness\',\n  },\n];'
       "
-      [imageUrl]="'blog/good.png'"
+      [imageUrl]="'blog/good.webp'"
     ></app-code-good-bad>
     <p>
       Now, Angular automatically updates the page title when users navigate to a
@@ -124,7 +124,7 @@
       [code]="
         '&lt;h1&gt;Yoga Routines&lt;/h1&gt;\n\n&lt;h2&gt;Beginner Routines&lt;/h2&gt;\n\n&lt;h2&gt;Sun Salutation Flow&lt;/h2&gt; &lt;!-- Should be an h3 --&gt;\n&lt;h2&gt;Deep Stretch Sequence&lt;/h2&gt; &lt;!-- Should be an h3 --&gt;'
       "
-      [imageUrl]="'blog/bad.png'"
+      [imageUrl]="'blog/bad.webp'"
     ></app-code-good-bad>
     <p>
       Here, the individual routine names should be h3s, but the component
@@ -147,7 +147,7 @@
 
     <app-code-good-bad
       [code]="exampleCode"
-      [imageUrl]="'blog/good.png'"
+      [imageUrl]="'blog/good.webp'"
     ></app-code-good-bad>
 
     <p>
@@ -201,7 +201,7 @@
     <p>Take this example where I loop through descriptions using *ngFor:</p>
     <app-code-good-bad
       [code]="exampleCode3"
-      [imageUrl]="'blog/bad.png'"
+      [imageUrl]="'blog/bad.webp'"
     ></app-code-good-bad>
     <p>
       This works, but the &lt;div&gt; doesn't actually do anything. It exists
@@ -215,7 +215,7 @@
     </p>
     <app-code-good-bad
       [code]="exampleCode4"
-      [imageUrl]="'blog/good.png'"
+      [imageUrl]="'blog/good.webp'"
     ></app-code-good-bad>
     <p>Now, the final markup stays clean, without extra wrapper elements.</p>
     <h3>What I Learned</h3>
@@ -265,7 +265,7 @@
     <p>Here's a mistake I made:</p>
     <app-code-good-bad
       [code]="exampleCode5"
-      [imageUrl]="'blog/bad.png'"
+      [imageUrl]="'blog/bad.webp'"
     ></app-code-good-bad>
     <p>
       I used a &lt;button&gt; for navigation, which is incorrect because it's
@@ -275,7 +275,7 @@
     <p>Instead, the correct approach is to use an &lt;a&gt; tag:</p>
     <app-code-good-bad
       [code]="exampleCode6"
-      [imageUrl]="'blog/good.png'"
+      [imageUrl]="'blog/good.webp'"
     ></app-code-good-bad>
     <p>
       Now, screen readers and keyboard users correctly interpret it as a
@@ -310,7 +310,7 @@
     </p>
     <app-code-good-bad
       [code]="exampleCode7"
-      [imageUrl]="'blog/bad.png'"
+      [imageUrl]="'blog/bad.webp'"
     ></app-code-good-bad>
     <p></p>
     <p>
@@ -324,7 +324,7 @@
     </p>
     <app-code-good-bad
       [code]="exampleCode8"
-      [imageUrl]="'blog/good.png'"
+      [imageUrl]="'blog/good.webp'"
     ></app-code-good-bad>
     <p>
       Now, screen readers will correctly announce: "OpenStillness Home, link",

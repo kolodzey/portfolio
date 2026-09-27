@@ -5,19 +5,19 @@ import { IntroComponent } from '../../../components/intro/intro.component';
 import { ProjectCardComponent } from '../../../components/project-card/project-card.component';
 
 @Component({
-    selector: 'app-projects',
-    imports: [
-        RouterModule,
-        IntroComponent,
-        ProjectCardComponent,
-        CollageYogaComponent,
-    ],
-    templateUrl: './projects.component.html',
-    styleUrl: './projects.component.scss'
+  selector: 'app-projects',
+  imports: [
+    RouterModule,
+    IntroComponent,
+    ProjectCardComponent,
+    CollageYogaComponent,
+  ],
+  templateUrl: './projects.component.html',
+  styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
-  title: string = 'Where Ideas Take Shape: My Projects';
+  title: string = 'Where Ideas Take Shape';
   text: string[] = [
-    'Welcome to my collection of projects, a reflection of my journey as a Software Developer, Designer, and Problem-Solver. Each piece is created with care, curiosity, and creativity, where thoughtful design and technical craftsmanship come together to shape meaningful experiences.',
+    'These projects explore different parts of my work, from independently building digital products to creating tools that improve design and development workflows. They reflect how I like to work: understanding the whole problem, shaping the experience, and carrying ideas through to implementation.',
   ];
 }

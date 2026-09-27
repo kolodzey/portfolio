@@ -5,7 +5,7 @@
   <a
     *ngFor="let article of articles"
     [routerLink]="article.absoluteLink ? article.absoluteLink : article.link"
-    class="box padding radius-l text-left full-link mb-16 border-standard"
+    class="box padding radius-l text-left full-link border-standard"
   >
     <img [src]="article.image" alt="" class="m-middle" />
     <h3>{{ article.title }}</h3>

@@ -4,12 +4,12 @@ import { BlogCardComponent } from '../../../components/blog-card/blog-card.compo
 import { IntroComponent } from '../../../components/intro/intro.component';
 
 @Component({
-    selector: 'app-blog',
-    imports: [RouterModule, IntroComponent, BlogCardComponent],
-    templateUrl: './blog.component.html'
+  selector: 'app-blog',
+  imports: [RouterModule, IntroComponent, BlogCardComponent],
+  templateUrl: './blog.component.html',
 })
 export class BlogComponent {
-  title: string = 'Beyond Code: Thoughts on Design & Development';
+  title: string = 'Notes on Design, Code & the Space Between';
   text: string =
-    'Welcome to my blog - a space where design, development, and creativity come together. Here, I share not just technical insights from my work in UX/UI design and development, but also the lessons, challenges, and inspirations that shape my journey.';
+    'I write about the space between design and development: from design systems and frontend architecture to tooling, accessibility, AI-assisted workflows, and the lessons that come from building real products.';
 }

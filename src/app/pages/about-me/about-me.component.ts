@@ -6,6 +6,7 @@ import { IntroComponent } from '../../components/intro/intro.component';
   selector: 'app-about-me',
   imports: [RouterModule, IntroComponent],
   templateUrl: './about-me.component.html',
+  styleUrl: 'about-me.component.scss',
 })
 export class AboutMeComponent {
   title: string = 'How I Found My Place in Tech';
